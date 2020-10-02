@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="44dp"
+        android:text="@string/consulta_med"
+        android:textColor="#3C3F41"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="264dp"
+        android:layout_height="45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        tools:text="Nombres" />
+
+    <EditText
+        android:id="@+id/Apellidos"
+        android:layout_width="267dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/apellidos"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="173dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="264dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verificar"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
